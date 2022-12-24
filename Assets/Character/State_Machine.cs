@@ -9,7 +9,7 @@ public class State_Machine : MonoBehaviour
     Animator an;
     Transform points;
 
-    public bool Can_Attack=true;
+   
     void Start()
     {
           

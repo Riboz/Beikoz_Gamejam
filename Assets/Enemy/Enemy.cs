@@ -5,7 +5,8 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     private GameObject player;
-    public int can=5;
+   public bool death;
+    public int can=5,speed,Hasar;
     Animator animator;
     State_Machine st;
     private void Start()
@@ -21,33 +22,34 @@ public void FixedUpdate()
 }
     void Enemy_Movement()
     {
-        this.gameObject.transform.position=Vector2.MoveTowards(this.gameObject.transform.position,player.transform.position,1*Time.deltaTime);
+        this.gameObject.transform.position=Vector2.MoveTowards(this.gameObject.transform.position,player.transform.position,speed*Time.deltaTime);
     }
    public void Enemy_Hurt(int hasar)
     {
-      can-=1;
-      if(can>5)
+      can-=hasar;
+      if(can>0)
       {
-        StartCoroutine(gethurt());
+        StartCoroutine(gethurts());
       }
-      else
+      else if(can==0 || can<0)
       {
-        StopCoroutine(gethurt());
+        StopCoroutine(gethurts());
         StartCoroutine(getdeath());
         
       }
     }
-    IEnumerator gethurt()
+    IEnumerator gethurts()
     {
          st.Animator_State_Machine("Hurt");
         yield return new WaitForSeconds(0.15f);
-    yield break; 
+        yield break; 
     }
     IEnumerator getdeath()
     {
          st.Animator_State_Machine("death");
+         death=true;
         yield return new WaitForSeconds(0.2f);
-        Destroy(this);
+         Destroy(this.gameObject);
         yield break;
 
     }
