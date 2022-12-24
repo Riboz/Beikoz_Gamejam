@@ -6,14 +6,13 @@ public class State_Machine : MonoBehaviour
 {
     // Start is called before the first frame update
     private string Current_State;
-    public GameObject Slash;
     Animator an;
     Transform points;
-    public Transform []Attack_Spawn_Transfrom;
+
     public bool Can_Attack=true;
     void Start()
     {
-          points=Attack_Spawn_Transfrom[1];
+          
         an=GetComponent<Animator>();
     }
 
@@ -24,8 +23,9 @@ public class State_Machine : MonoBehaviour
      {
         return;
      }
-     an.Play(New_state);
+     
      Current_State=New_state;
+     an.Play(Current_State);
     }
     
    

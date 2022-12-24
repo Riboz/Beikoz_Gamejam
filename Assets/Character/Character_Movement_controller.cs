@@ -8,6 +8,9 @@ public class Character_Movement_controller : MonoBehaviour
     public string Which_statu;
     public GameObject Stuff;
     private Rigidbody2D rb;
+    public Transform The_point;
+    public Camera cameras; 
+    
     
     State_Machine St_mac;
    [SerializeField]private float Speed_Movement;
@@ -21,26 +24,27 @@ public class Character_Movement_controller : MonoBehaviour
     {
      float Move_Horizontal= Input.GetAxisRaw("Horizontal");
      float Move_Vertical= Input.GetAxisRaw("Vertical");
-     
-     rb.velocity=new Vector2(Move_Horizontal,Move_Vertical).normalized*Speed_Movement;
-     
-      if(Move_Vertical<0 || Move_Horizontal>0)
-     {
        if(Move_Horizontal<0)
        {
          GetComponent<SpriteRenderer>().flipX=true;
        }
-       if(Move_Horizontal>0)
+       else if(Move_Horizontal>0)
        {
          GetComponent<SpriteRenderer>().flipX=false;
        }
+     rb.velocity=new Vector2(Move_Horizontal,Move_Vertical).normalized*Speed_Movement;
+     
+      if(Move_Vertical<0 || Move_Horizontal>0)
+     {
+       
+      
         Which_statu="Run";
         
      }
 
      else
      {
-      Which_statu="Idle";
+      return;
      }
     }
 
@@ -48,22 +52,14 @@ public class Character_Movement_controller : MonoBehaviour
     void FixedUpdate()
     {
         Character_All_Direction_Movement();
-
-        St_mac.Animator_State_Machine(Which_statu);
-        
     }
      void Update()
      {
-
+Mouse_Click();
      }
      void Mouse_Click()
      {
-      Vector2 The_ROTATER=Camera.main.ScreenToWorldPoint(Input.mousePosition);
-
-      float rotations= Mathf.Atan2(The_ROTATER.x,The_ROTATER.y)*Mathf.Rad2Deg-45;
-
-      Stuff.GetComponent<Rigidbody2D>().SetRotation(rotations);
-
+      Stuff.transform.position=Vector2.MoveTowards(this.transform.position,The_point.position,5);
 
      }
 }
