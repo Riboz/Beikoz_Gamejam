@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 081cb4f454d96e642b3599dc68aeccf7
+guid: 3118d9dea6b84384ab77f214fc69dbc3
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 15
+  spritePixelsToUnits: 25
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprite-0001 1_0
+      name: anyaachan_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 41
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: caed2015b494e2b44bb5edb975bcb8b5
-      internalID: 653258852
+      spriteID: ed9ea2991707a99458e4a64aa3d308b9
+      internalID: 1391936076
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-0001 1_1
+      name: anyaachan_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 41
         y: 0
-        width: 32
-        height: 32
+        width: 41
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20565aba062baf3449a35c3cc51101d0
-      internalID: 1504050994
+      spriteID: 3f39dc7bba5e68c458f05733301e6c44
+      internalID: 680051126
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-0001 1_2
+      name: anyaachan_2
       rect:
         serializedVersion: 2
-        x: 64
+        x: 82
         y: 0
-        width: 32
-        height: 32
+        width: 41
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,20 +161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93ac259dfca1c94458320a585fba0097
-      internalID: 1657813902
+      spriteID: 493acc0fbf648b3409d37f2bc5d778d4
+      internalID: 332695003
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-0001 1_3
+      name: anyaachan_3
       rect:
         serializedVersion: 2
-        x: 96
+        x: 123
         y: 0
-        width: 32
-        height: 32
+        width: 41
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,8 +182,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e2914cc25d8a1c4cacd91d378fa8a09
-      internalID: -1570207212
+      spriteID: 02566aa4507a87f45bfae732f3453817
+      internalID: 1673724283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anyaachan_4
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 0
+        width: 41
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d03e9fcb4f100f4e95eeac3f4a76f3b
+      internalID: 2052584122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anyaachan_5
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 0
+        width: 41
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e26e13d8a7273242a85e74f4f6b3250
+      internalID: -614532874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anyaachan_6
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 0
+        width: 41
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d1f5a29de57bbf46a58310f459d8175
+      internalID: 328279327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anyaachan_7
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 0
+        width: 41
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e85feb72243c02439d7c64d7e9141e4
+      internalID: -793636169
       vertices: []
       indices: 
       edges: []
@@ -199,10 +283,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Sprite-0001 1_1: 1504050994
-      Sprite-0001 1_0: 653258852
-      Sprite-0001 1_2: 1657813902
-      Sprite-0001 1_3: -1570207212
+      anyaachan_4: 2052584122
+      anyaachan_0: 1391936076
+      anyaachan_7: -793636169
+      anyaachan_2: 332695003
+      anyaachan_5: -614532874
+      anyaachan_1: 680051126
+      anyaachan_6: 328279327
+      anyaachan_3: 1673724283
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

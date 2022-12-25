@@ -32,7 +32,7 @@ while(tru)
     {
         rb=GetComponent<Rigidbody2D>();
         St_mac=GetComponent<State_Machine>();
-        StartCoroutine(The_SHAKE_WAND());
+        
     }
     private void Character_All_Direction_Movement()
     {
@@ -45,13 +45,13 @@ while(tru)
         
     
          
-         Stuff.GetComponent<Transform>().transform.localPosition=new Vector3(-0.7f,0,0);
+         Stuff.GetComponent<Transform>().transform.localPosition=new Vector3(0.4f,0,0);
          
        }
        else if(Move_Horizontal>0)
        {
          GetComponent<SpriteRenderer>().flipX=false;
-          Stuff.GetComponent<Transform>().transform.localPosition=new Vector3(0.7f,0,0);
+          Stuff.GetComponent<Transform>().transform.localPosition=new Vector3(-0.4f,0,0);
        }
      rb.velocity=new Vector2(Move_Horizontal,Move_Vertical).normalized*Speed_Movement;
      
@@ -65,12 +65,15 @@ while(tru)
      }
      if(Move_Horizontal!=0||Move_Vertical!=0)
      {
-         Which_statu="Run";
+         St_mac.Animator_State_Machine("Run");
+         StartCoroutine(The_SHAKE_WAND());
      }
 
      else
      {
-      return;
+      StopCoroutine(The_SHAKE_WAND());
+      rb.rotation=0;
+       St_mac.Animator_State_Machine("idle");
      }
     }
      public void Update()
@@ -94,11 +97,19 @@ while(tru)
      {
       GameObject Bullet = Instantiate(MagicBullet,Thebullet_pos.position,Quaternion.identity);
 
-      for(int i=0;i<=20;i++)
+      for(int i=0;i<=15;i++)
       {
       if(Bullet!=null) 
-      {Bullet.transform.position=Vector2.MoveTowards(Bullet.transform.position,last_Bulletpos,1);
-        if(Bullet.transform.position==last_Bulletpos)
+      {Bullet.transform.position=Vector2.Lerp(Bullet.transform.position,last_Bulletpos,60*Time.deltaTime);
+      if(i>=35)
+      {
+        
+          
+           Bullet.gameObject.transform.DOScale(new Vector3(0,0,0),4f);
+           
+      }
+      
+        if(Vector2.Distance(Bullet.transform.position,last_Bulletpos)<0.2f)
         {
           Can_Attack=true;
         yield break;
@@ -108,7 +119,7 @@ while(tru)
      
       }
 
-       yield   return new WaitForSeconds(0.2f); 
+       yield   return new WaitForSeconds(0.1f); 
       
         Can_Attack=true;
          yield break;
@@ -149,6 +160,7 @@ while(tru)
 
        if(Input.GetMouseButton(0) && Can_Attack )
        {
+       
         // particule ve ekran sarsıntısı
          last_Bulletpos=tatake;
 

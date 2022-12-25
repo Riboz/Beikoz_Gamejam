@@ -1,14 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using DG.Tweening;
 public class Enemy : MonoBehaviour
 {
     private GameObject player;
+    
    public bool death;
-    public int can=5,speed,Hasar;
+    public int can=5,speed,tutulanspeed,Hasar;
     Animator animator;
     State_Machine st;
+    public GameObject Goz;
     private void Start()
     {
         animator=GetComponent<Animator>();
@@ -26,6 +28,7 @@ public void FixedUpdate()
     }
    public void Enemy_Hurt(int hasar)
     {
+
       can-=hasar;
       if(can>0)
       {
@@ -40,14 +43,18 @@ public void FixedUpdate()
     }
     IEnumerator gethurts()
     {
-         st.Animator_State_Machine("Hurt");
+      this.transform.DOScale(new Vector3(1.2f,1.2f,0),0.1f);
+        speed=0;
         yield return new WaitForSeconds(0.15f);
+        speed=tutulanspeed;
         yield break; 
     }
     IEnumerator getdeath()
     {
-         st.Animator_State_Machine("death");
+         speed=0;
          death=true;
+         Instantiate(Goz,this.transform.position,Quaternion.identity);
+          this.transform.DOScale(new Vector3(0,0,0),0.2f);
         yield return new WaitForSeconds(0.2f);
          Destroy(this.gameObject);
         yield break;
