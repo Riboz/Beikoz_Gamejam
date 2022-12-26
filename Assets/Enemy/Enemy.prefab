@@ -78,7 +78,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 352120368, guid: 55528f956a2b6514e93fece7f6ef8743, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -124,7 +124,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.028101921, y: 0.103040695}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -135,7 +135,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.9179969, y: 2.9671364}
   m_EdgeRadius: 0
 --- !u!114 &4292864142949314457
 MonoBehaviour:
@@ -150,11 +150,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   death: 0
-  can: 1
-  speed: 3
-  tutulanspeed: 3
+  can: 2
+  speed: 4
+  tutulanspeed: 4
   Hasar: 1
-  Goz: {fileID: 8056982358176403396, guid: 21e914832fbef3648bf7fe706d8b4fc7, type: 3}
+  istenilen_dusurme_Olasilik: 65
+  Goz: {fileID: 1516970988420202732, guid: fc165a16d843fed4fb8a6e2743872852, type: 3}
 --- !u!95 &4292864142949314462
 Animator:
   serializedVersion: 5

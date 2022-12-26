@@ -10,10 +10,10 @@ PrefabInstance:
     - target: {fileID: 4292864142949314457, guid: f6c8e05b4ba993c4bac6b6bfe63f8321, type: 3}
       propertyPath: Goz
       value: 
-      objectReference: {fileID: 8056982358176403396, guid: 21e914832fbef3648bf7fe706d8b4fc7, type: 3}
+      objectReference: {fileID: 8998846374429425180, guid: fd513ed4c13fb7d43aff33299987a3c6, type: 3}
     - target: {fileID: 4292864142949314457, guid: f6c8e05b4ba993c4bac6b6bfe63f8321, type: 3}
       propertyPath: can
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4292864142949314457, guid: f6c8e05b4ba993c4bac6b6bfe63f8321, type: 3}
       propertyPath: Hasar
@@ -21,11 +21,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4292864142949314457, guid: f6c8e05b4ba993c4bac6b6bfe63f8321, type: 3}
       propertyPath: speed
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4292864142949314457, guid: f6c8e05b4ba993c4bac6b6bfe63f8321, type: 3}
       propertyPath: tutulanspeed
-      value: 2
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4292864142949314457, guid: f6c8e05b4ba993c4bac6b6bfe63f8321, type: 3}
+      propertyPath: istenilen_dusurme_Olasilik
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 4292864142949314458, guid: f6c8e05b4ba993c4bac6b6bfe63f8321, type: 3}
       propertyPath: m_RootOrder
@@ -72,6 +76,22 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4292864142949314459, guid: f6c8e05b4ba993c4bac6b6bfe63f8321, type: 3}
+      propertyPath: m_Size.x
+      value: 1.7802715
+      objectReference: {fileID: 0}
+    - target: {fileID: 4292864142949314459, guid: f6c8e05b4ba993c4bac6b6bfe63f8321, type: 3}
+      propertyPath: m_Size.y
+      value: 1.6160029
+      objectReference: {fileID: 0}
+    - target: {fileID: 4292864142949314459, guid: f6c8e05b4ba993c4bac6b6bfe63f8321, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.12320042
+      objectReference: {fileID: 0}
+    - target: {fileID: 4292864142949314459, guid: f6c8e05b4ba993c4bac6b6bfe63f8321, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.041066825
+      objectReference: {fileID: 0}
+    - target: {fileID: 4292864142949314459, guid: f6c8e05b4ba993c4bac6b6bfe63f8321, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 3.84
       objectReference: {fileID: 0}
@@ -102,6 +122,10 @@ PrefabInstance:
     - target: {fileID: 4292864142949314469, guid: f6c8e05b4ba993c4bac6b6bfe63f8321, type: 3}
       propertyPath: m_Color.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4292864142949314469, guid: f6c8e05b4ba993c4bac6b6bfe63f8321, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5087292818404795823, guid: f6c8e05b4ba993c4bac6b6bfe63f8321, type: 3}
       propertyPath: m_Color.b

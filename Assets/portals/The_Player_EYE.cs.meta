@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 15b902d090be0b6429ee20ae70f06ea7
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Which_Eye: {instanceID: 0}
+  - eyehole_trans: {instanceID: 0}
+  - targetEyeHole: {instanceID: 0}
+  - annen: {fileID: 3960855755446130270, guid: 43dbc0c41b888f247a00a9f82646a42b, type: 3}
+  - Eye_PLACED_Head: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

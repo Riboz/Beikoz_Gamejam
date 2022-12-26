@@ -28,6 +28,7 @@ public class getDamage : MonoBehaviour
     void Start()
 {
     StartCoroutine(ohayo());
+    
  Destroy(this.gameObject,1.5f);
 }
 IEnumerator ohayo()
